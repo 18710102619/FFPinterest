@@ -1,0 +1,11 @@
+platform :ios, '7.0'   #系统
+
+#pod install 安装
+
+pod 'Masonry'                     #自动布局
+pod 'SDWebImage', '~>3.8'
+
+
+
+
+

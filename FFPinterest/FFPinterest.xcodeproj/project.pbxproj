@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36334C781D3A7FF800C17D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334C771D3A7FF800C17D6F /* main.m */; };
+		36334C7B1D3A7FF800C17D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334C7A1D3A7FF800C17D6F /* AppDelegate.m */; };
+		36334C811D3A7FF800C17D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36334C7F1D3A7FF800C17D6F /* Main.storyboard */; };
+		36334C831D3A7FF800C17D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36334C821D3A7FF800C17D6F /* Assets.xcassets */; };
+		36334C861D3A7FF800C17D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36334C841D3A7FF800C17D6F /* LaunchScreen.storyboard */; };
+		36334C911D3A7FF800C17D6F /* FFPinterestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334C901D3A7FF800C17D6F /* FFPinterestTests.m */; };
+		36334C9C1D3A7FF800C17D6F /* FFPinterestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334C9B1D3A7FF800C17D6F /* FFPinterestUITests.m */; };
+		36334CBC1D3A877D00C17D6F /* FFPinterestLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334CB61D3A877D00C17D6F /* FFPinterestLayout.m */; };
+		36334CBD1D3A877D00C17D6F /* FFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334CB81D3A877D00C17D6F /* FFShopCell.m */; };
+		36334CBE1D3A877D00C17D6F /* FFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36334CB91D3A877D00C17D6F /* FFShopCell.xib */; };
+		36334CBF1D3A877D00C17D6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334CBB1D3A877D00C17D6F /* ViewController.m */; };
+		36334CC21D3A87CF00C17D6F /* FFShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334CC11D3A87CF00C17D6F /* FFShopModel.m */; };
+		36334CC61D3A888D00C17D6F /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36334CC51D3A888D00C17D6F /* 1.plist */; };
+		36334D2D1D3A8C0500C17D6F /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D061D3A8C0500C17D6F /* MJArgument.m */; };
+		36334D2E1D3A8C0500C17D6F /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D081D3A8C0500C17D6F /* MJConst.m */; };
+		36334D2F1D3A8C0500C17D6F /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D0B1D3A8C0500C17D6F /* MJFoundation.m */; };
+		36334D301D3A8C0500C17D6F /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D0D1D3A8C0500C17D6F /* MJIvar.m */; };
+		36334D311D3A8C0500C17D6F /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D0F1D3A8C0500C17D6F /* MJMember.m */; };
+		36334D321D3A8C0500C17D6F /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D111D3A8C0500C17D6F /* MJMethod.m */; };
+		36334D331D3A8C0500C17D6F /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D131D3A8C0500C17D6F /* MJType.m */; };
+		36334D341D3A8C0500C17D6F /* MJTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D151D3A8C0500C17D6F /* MJTypeEncoding.m */; };
+		36334D351D3A8C0500C17D6F /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D171D3A8C0500C17D6F /* NSObject+MJCoding.m */; };
+		36334D361D3A8C0500C17D6F /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D191D3A8C0500C17D6F /* NSObject+MJKeyValue.m */; };
+		36334D371D3A8C0500C17D6F /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D1B1D3A8C0500C17D6F /* NSObject+MJMember.m */; };
+		36334D381D3A8C0500C17D6F /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 36334D1D1D3A8C0500C17D6F /* MJRefresh.bundle */; };
+		36334D391D3A8C0500C17D6F /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D201D3A8C0500C17D6F /* MJRefreshBaseView.m */; };
+		36334D3A1D3A8C0500C17D6F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D221D3A8C0500C17D6F /* MJRefreshConst.m */; };
+		36334D3B1D3A8C0500C17D6F /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D241D3A8C0500C17D6F /* MJRefreshFooterView.m */; };
+		36334D3C1D3A8C0500C17D6F /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D261D3A8C0500C17D6F /* MJRefreshHeaderView.m */; };
+		36334D3D1D3A8C0500C17D6F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D281D3A8C0500C17D6F /* UIScrollView+MJExtension.m */; };
+		36334D3E1D3A8C0500C17D6F /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D2A1D3A8C0500C17D6F /* UIScrollView+MJRefresh.m */; };
+		36334D3F1D3A8C0500C17D6F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 36334D2C1D3A8C0500C17D6F /* UIView+MJExtension.m */; };
+		EDBC29C8242297E960E55B61 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D95FE3BB237553B835BF208 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36334C8D1D3A7FF800C17D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36334C6B1D3A7FF800C17D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36334C721D3A7FF800C17D6F;
+			remoteInfo = FFPinterest;
+		};
+		36334C981D3A7FF800C17D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36334C6B1D3A7FF800C17D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36334C721D3A7FF800C17D6F;
+			remoteInfo = FFPinterest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36334C731D3A7FF800C17D6F /* FFPinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFPinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36334C771D3A7FF800C17D6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36334C791D3A7FF800C17D6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36334C7A1D3A7FF800C17D6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36334C801D3A7FF800C17D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36334C821D3A7FF800C17D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36334C851D3A7FF800C17D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36334C871D3A7FF800C17D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36334C8C1D3A7FF800C17D6F /* FFPinterestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFPinterestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36334C901D3A7FF800C17D6F /* FFPinterestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPinterestTests.m; sourceTree = "<group>"; };
+		36334C921D3A7FF800C17D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36334C971D3A7FF800C17D6F /* FFPinterestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFPinterestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36334C9B1D3A7FF800C17D6F /* FFPinterestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPinterestUITests.m; sourceTree = "<group>"; };
+		36334C9D1D3A7FF800C17D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36334CB51D3A877D00C17D6F /* FFPinterestLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFPinterestLayout.h; sourceTree = "<group>"; };
+		36334CB61D3A877D00C17D6F /* FFPinterestLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFPinterestLayout.m; sourceTree = "<group>"; };
+		36334CB71D3A877D00C17D6F /* FFShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFShopCell.h; sourceTree = "<group>"; };
+		36334CB81D3A877D00C17D6F /* FFShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFShopCell.m; sourceTree = "<group>"; };
+		36334CB91D3A877D00C17D6F /* FFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFShopCell.xib; sourceTree = "<group>"; };
+		36334CBA1D3A877D00C17D6F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36334CBB1D3A877D00C17D6F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36334CC01D3A87CF00C17D6F /* FFShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFShopModel.h; sourceTree = "<group>"; };
+		36334CC11D3A87CF00C17D6F /* FFShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFShopModel.m; sourceTree = "<group>"; };
+		36334CC51D3A888D00C17D6F /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		36334D051D3A8C0500C17D6F /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
+		36334D061D3A8C0500C17D6F /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
+		36334D071D3A8C0500C17D6F /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		36334D081D3A8C0500C17D6F /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		36334D091D3A8C0500C17D6F /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		36334D0A1D3A8C0500C17D6F /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		36334D0B1D3A8C0500C17D6F /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		36334D0C1D3A8C0500C17D6F /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		36334D0D1D3A8C0500C17D6F /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		36334D0E1D3A8C0500C17D6F /* MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMember.h; sourceTree = "<group>"; };
+		36334D0F1D3A8C0500C17D6F /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
+		36334D101D3A8C0500C17D6F /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
+		36334D111D3A8C0500C17D6F /* MJMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMethod.m; sourceTree = "<group>"; };
+		36334D121D3A8C0500C17D6F /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		36334D131D3A8C0500C17D6F /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		36334D141D3A8C0500C17D6F /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
+		36334D151D3A8C0500C17D6F /* MJTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTypeEncoding.m; sourceTree = "<group>"; };
+		36334D161D3A8C0500C17D6F /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		36334D171D3A8C0500C17D6F /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		36334D181D3A8C0500C17D6F /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		36334D191D3A8C0500C17D6F /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		36334D1A1D3A8C0500C17D6F /* NSObject+MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJMember.h"; sourceTree = "<group>"; };
+		36334D1B1D3A8C0500C17D6F /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
+		36334D1D1D3A8C0500C17D6F /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		36334D1E1D3A8C0500C17D6F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		36334D1F1D3A8C0500C17D6F /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		36334D201D3A8C0500C17D6F /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		36334D211D3A8C0500C17D6F /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		36334D221D3A8C0500C17D6F /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		36334D231D3A8C0500C17D6F /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		36334D241D3A8C0500C17D6F /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		36334D251D3A8C0500C17D6F /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		36334D261D3A8C0500C17D6F /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		36334D271D3A8C0500C17D6F /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		36334D281D3A8C0500C17D6F /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		36334D291D3A8C0500C17D6F /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		36334D2A1D3A8C0500C17D6F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		36334D2B1D3A8C0500C17D6F /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		36334D2C1D3A8C0500C17D6F /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		3D95FE3BB237553B835BF208 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8730188F61A897AF425A0812 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B595030A5E32BB94C8DC892C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36334C701D3A7FF800C17D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBC29C8242297E960E55B61 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36334C891D3A7FF800C17D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36334C941D3A7FF800C17D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36334C6A1D3A7FF800C17D6F = {
+			isa = PBXGroup;
+			children = (
+				36334C751D3A7FF800C17D6F /* FFPinterest */,
+				36334C8F1D3A7FF800C17D6F /* FFPinterestTests */,
+				36334C9A1D3A7FF800C17D6F /* FFPinterestUITests */,
+				36334C741D3A7FF800C17D6F /* Products */,
+				907DBFFB57F31EC367EC1125 /* Pods */,
+				95355460827E8CE6AC93BD67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36334C741D3A7FF800C17D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36334C731D3A7FF800C17D6F /* FFPinterest.app */,
+				36334C8C1D3A7FF800C17D6F /* FFPinterestTests.xctest */,
+				36334C971D3A7FF800C17D6F /* FFPinterestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36334C751D3A7FF800C17D6F /* FFPinterest */ = {
+			isa = PBXGroup;
+			children = (
+				36334D031D3A8C0500C17D6F /* Lib */,
+				36334CB41D3A877D00C17D6F /* Pages */,
+				36334C791D3A7FF800C17D6F /* AppDelegate.h */,
+				36334C7A1D3A7FF800C17D6F /* AppDelegate.m */,
+				36334C761D3A7FF800C17D6F /* Supporting Files */,
+			);
+			path = FFPinterest;
+			sourceTree = "<group>";
+		};
+		36334C761D3A7FF800C17D6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36334CC51D3A888D00C17D6F /* 1.plist */,
+				36334C7F1D3A7FF800C17D6F /* Main.storyboard */,
+				36334C821D3A7FF800C17D6F /* Assets.xcassets */,
+				36334C841D3A7FF800C17D6F /* LaunchScreen.storyboard */,
+				36334C871D3A7FF800C17D6F /* Info.plist */,
+				36334C771D3A7FF800C17D6F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36334C8F1D3A7FF800C17D6F /* FFPinterestTests */ = {
+			isa = PBXGroup;
+			children = (
+				36334C901D3A7FF800C17D6F /* FFPinterestTests.m */,
+				36334C921D3A7FF800C17D6F /* Info.plist */,
+			);
+			path = FFPinterestTests;
+			sourceTree = "<group>";
+		};
+		36334C9A1D3A7FF800C17D6F /* FFPinterestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36334C9B1D3A7FF800C17D6F /* FFPinterestUITests.m */,
+				36334C9D1D3A7FF800C17D6F /* Info.plist */,
+			);
+			path = FFPinterestUITests;
+			sourceTree = "<group>";
+		};
+		36334CB41D3A877D00C17D6F /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				36334CB71D3A877D00C17D6F /* FFShopCell.h */,
+				36334CB81D3A877D00C17D6F /* FFShopCell.m */,
+				36334CB91D3A877D00C17D6F /* FFShopCell.xib */,
+				36334CC01D3A87CF00C17D6F /* FFShopModel.h */,
+				36334CC11D3A87CF00C17D6F /* FFShopModel.m */,
+				36334CB51D3A877D00C17D6F /* FFPinterestLayout.h */,
+				36334CB61D3A877D00C17D6F /* FFPinterestLayout.m */,
+				36334CBA1D3A877D00C17D6F /* ViewController.h */,
+				36334CBB1D3A877D00C17D6F /* ViewController.m */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		36334D031D3A8C0500C17D6F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				36334D041D3A8C0500C17D6F /* MJExtension */,
+				36334D1C1D3A8C0500C17D6F /* MJRefresh */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		36334D041D3A8C0500C17D6F /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				36334D051D3A8C0500C17D6F /* MJArgument.h */,
+				36334D061D3A8C0500C17D6F /* MJArgument.m */,
+				36334D071D3A8C0500C17D6F /* MJConst.h */,
+				36334D081D3A8C0500C17D6F /* MJConst.m */,
+				36334D091D3A8C0500C17D6F /* MJExtension.h */,
+				36334D0A1D3A8C0500C17D6F /* MJFoundation.h */,
+				36334D0B1D3A8C0500C17D6F /* MJFoundation.m */,
+				36334D0C1D3A8C0500C17D6F /* MJIvar.h */,
+				36334D0D1D3A8C0500C17D6F /* MJIvar.m */,
+				36334D0E1D3A8C0500C17D6F /* MJMember.h */,
+				36334D0F1D3A8C0500C17D6F /* MJMember.m */,
+				36334D101D3A8C0500C17D6F /* MJMethod.h */,
+				36334D111D3A8C0500C17D6F /* MJMethod.m */,
+				36334D121D3A8C0500C17D6F /* MJType.h */,
+				36334D131D3A8C0500C17D6F /* MJType.m */,
+				36334D141D3A8C0500C17D6F /* MJTypeEncoding.h */,
+				36334D151D3A8C0500C17D6F /* MJTypeEncoding.m */,
+				36334D161D3A8C0500C17D6F /* NSObject+MJCoding.h */,
+				36334D171D3A8C0500C17D6F /* NSObject+MJCoding.m */,
+				36334D181D3A8C0500C17D6F /* NSObject+MJKeyValue.h */,
+				36334D191D3A8C0500C17D6F /* NSObject+MJKeyValue.m */,
+				36334D1A1D3A8C0500C17D6F /* NSObject+MJMember.h */,
+				36334D1B1D3A8C0500C17D6F /* NSObject+MJMember.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		36334D1C1D3A8C0500C17D6F /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				36334D1D1D3A8C0500C17D6F /* MJRefresh.bundle */,
+				36334D1E1D3A8C0500C17D6F /* MJRefresh.h */,
+				36334D1F1D3A8C0500C17D6F /* MJRefreshBaseView.h */,
+				36334D201D3A8C0500C17D6F /* MJRefreshBaseView.m */,
+				36334D211D3A8C0500C17D6F /* MJRefreshConst.h */,
+				36334D221D3A8C0500C17D6F /* MJRefreshConst.m */,
+				36334D231D3A8C0500C17D6F /* MJRefreshFooterView.h */,
+				36334D241D3A8C0500C17D6F /* MJRefreshFooterView.m */,
+				36334D251D3A8C0500C17D6F /* MJRefreshHeaderView.h */,
+				36334D261D3A8C0500C17D6F /* MJRefreshHeaderView.m */,
+				36334D271D3A8C0500C17D6F /* UIScrollView+MJExtension.h */,
+				36334D281D3A8C0500C17D6F /* UIScrollView+MJExtension.m */,
+				36334D291D3A8C0500C17D6F /* UIScrollView+MJRefresh.h */,
+				36334D2A1D3A8C0500C17D6F /* UIScrollView+MJRefresh.m */,
+				36334D2B1D3A8C0500C17D6F /* UIView+MJExtension.h */,
+				36334D2C1D3A8C0500C17D6F /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		907DBFFB57F31EC367EC1125 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B595030A5E32BB94C8DC892C /* Pods.debug.xcconfig */,
+				8730188F61A897AF425A0812 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95355460827E8CE6AC93BD67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D95FE3BB237553B835BF208 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36334C721D3A7FF800C17D6F /* FFPinterest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36334CA01D3A7FF800C17D6F /* Build configuration list for PBXNativeTarget "FFPinterest" */;
+			buildPhases = (
+				C16C714A4D116F33D589868B /* Check Pods Manifest.lock */,
+				36334C6F1D3A7FF800C17D6F /* Sources */,
+				36334C701D3A7FF800C17D6F /* Frameworks */,
+				36334C711D3A7FF800C17D6F /* Resources */,
+				4AEA466D71701A04B1E0F95D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFPinterest;
+			productName = FFPinterest;
+			productReference = 36334C731D3A7FF800C17D6F /* FFPinterest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36334C8B1D3A7FF800C17D6F /* FFPinterestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36334CA31D3A7FF800C17D6F /* Build configuration list for PBXNativeTarget "FFPinterestTests" */;
+			buildPhases = (
+				36334C881D3A7FF800C17D6F /* Sources */,
+				36334C891D3A7FF800C17D6F /* Frameworks */,
+				36334C8A1D3A7FF800C17D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36334C8E1D3A7FF800C17D6F /* PBXTargetDependency */,
+			);
+			name = FFPinterestTests;
+			productName = FFPinterestTests;
+			productReference = 36334C8C1D3A7FF800C17D6F /* FFPinterestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36334C961D3A7FF800C17D6F /* FFPinterestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36334CA61D3A7FF800C17D6F /* Build configuration list for PBXNativeTarget "FFPinterestUITests" */;
+			buildPhases = (
+				36334C931D3A7FF800C17D6F /* Sources */,
+				36334C941D3A7FF800C17D6F /* Frameworks */,
+				36334C951D3A7FF800C17D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36334C991D3A7FF800C17D6F /* PBXTargetDependency */,
+			);
+			name = FFPinterestUITests;
+			productName = FFPinterestUITests;
+			productReference = 36334C971D3A7FF800C17D6F /* FFPinterestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36334C6B1D3A7FF800C17D6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FF;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "张玲玉";
+				TargetAttributes = {
+					36334C721D3A7FF800C17D6F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					36334C8B1D3A7FF800C17D6F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 36334C721D3A7FF800C17D6F;
+					};
+					36334C961D3A7FF800C17D6F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 36334C721D3A7FF800C17D6F;
+					};
+				};
+			};
+			buildConfigurationList = 36334C6E1D3A7FF800C17D6F /* Build configuration list for PBXProject "FFPinterest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36334C6A1D3A7FF800C17D6F;
+			productRefGroup = 36334C741D3A7FF800C17D6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36334C721D3A7FF800C17D6F /* FFPinterest */,
+				36334C8B1D3A7FF800C17D6F /* FFPinterestTests */,
+				36334C961D3A7FF800C17D6F /* FFPinterestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36334C711D3A7FF800C17D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36334CC61D3A888D00C17D6F /* 1.plist in Resources */,
+				36334C861D3A7FF800C17D6F /* LaunchScreen.storyboard in Resources */,
+				36334D381D3A8C0500C17D6F /* MJRefresh.bundle in Resources */,
+				36334CBE1D3A877D00C17D6F /* FFShopCell.xib in Resources */,
+				36334C831D3A7FF800C17D6F /* Assets.xcassets in Resources */,
+				36334C811D3A7FF800C17D6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36334C8A1D3A7FF800C17D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36334C951D3A7FF800C17D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AEA466D71701A04B1E0F95D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16C714A4D116F33D589868B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36334C6F1D3A7FF800C17D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36334D311D3A8C0500C17D6F /* MJMember.m in Sources */,
+				36334D331D3A8C0500C17D6F /* MJType.m in Sources */,
+				36334D3D1D3A8C0500C17D6F /* UIScrollView+MJExtension.m in Sources */,
+				36334D3B1D3A8C0500C17D6F /* MJRefreshFooterView.m in Sources */,
+				36334C7B1D3A7FF800C17D6F /* AppDelegate.m in Sources */,
+				36334D2F1D3A8C0500C17D6F /* MJFoundation.m in Sources */,
+				36334D391D3A8C0500C17D6F /* MJRefreshBaseView.m in Sources */,
+				36334CBD1D3A877D00C17D6F /* FFShopCell.m in Sources */,
+				36334D341D3A8C0500C17D6F /* MJTypeEncoding.m in Sources */,
+				36334D2D1D3A8C0500C17D6F /* MJArgument.m in Sources */,
+				36334D2E1D3A8C0500C17D6F /* MJConst.m in Sources */,
+				36334D351D3A8C0500C17D6F /* NSObject+MJCoding.m in Sources */,
+				36334D301D3A8C0500C17D6F /* MJIvar.m in Sources */,
+				36334D3C1D3A8C0500C17D6F /* MJRefreshHeaderView.m in Sources */,
+				36334D361D3A8C0500C17D6F /* NSObject+MJKeyValue.m in Sources */,
+				36334CBC1D3A877D00C17D6F /* FFPinterestLayout.m in Sources */,
+				36334D3F1D3A8C0500C17D6F /* UIView+MJExtension.m in Sources */,
+				36334D3E1D3A8C0500C17D6F /* UIScrollView+MJRefresh.m in Sources */,
+				36334D371D3A8C0500C17D6F /* NSObject+MJMember.m in Sources */,
+				36334D321D3A8C0500C17D6F /* MJMethod.m in Sources */,
+				36334D3A1D3A8C0500C17D6F /* MJRefreshConst.m in Sources */,
+				36334CC21D3A87CF00C17D6F /* FFShopModel.m in Sources */,
+				36334C781D3A7FF800C17D6F /* main.m in Sources */,
+				36334CBF1D3A877D00C17D6F /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36334C881D3A7FF800C17D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36334C911D3A7FF800C17D6F /* FFPinterestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36334C931D3A7FF800C17D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36334C9C1D3A7FF800C17D6F /* FFPinterestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36334C8E1D3A7FF800C17D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36334C721D3A7FF800C17D6F /* FFPinterest */;
+			targetProxy = 36334C8D1D3A7FF800C17D6F /* PBXContainerItemProxy */;
+		};
+		36334C991D3A7FF800C17D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36334C721D3A7FF800C17D6F /* FFPinterest */;
+			targetProxy = 36334C981D3A7FF800C17D6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36334C7F1D3A7FF800C17D6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36334C801D3A7FF800C17D6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36334C841D3A7FF800C17D6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36334C851D3A7FF800C17D6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36334C9E1D3A7FF800C17D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		36334C9F1D3A7FF800C17D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36334CA11D3A7FF800C17D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B595030A5E32BB94C8DC892C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FFPinterest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zly.FFPinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36334CA21D3A7FF800C17D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8730188F61A897AF425A0812 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FFPinterest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zly.FFPinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		36334CA41D3A7FF800C17D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FFPinterestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zly.FFPinterestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFPinterest.app/FFPinterest";
+			};
+			name = Debug;
+		};
+		36334CA51D3A7FF800C17D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FFPinterestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zly.FFPinterestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFPinterest.app/FFPinterest";
+			};
+			name = Release;
+		};
+		36334CA71D3A7FF800C17D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FFPinterestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zly.FFPinterestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FFPinterest;
+			};
+			name = Debug;
+		};
+		36334CA81D3A7FF800C17D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FFPinterestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zly.FFPinterestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FFPinterest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36334C6E1D3A7FF800C17D6F /* Build configuration list for PBXProject "FFPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36334C9E1D3A7FF800C17D6F /* Debug */,
+				36334C9F1D3A7FF800C17D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36334CA01D3A7FF800C17D6F /* Build configuration list for PBXNativeTarget "FFPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36334CA11D3A7FF800C17D6F /* Debug */,
+				36334CA21D3A7FF800C17D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36334CA31D3A7FF800C17D6F /* Build configuration list for PBXNativeTarget "FFPinterestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36334CA41D3A7FF800C17D6F /* Debug */,
+				36334CA51D3A7FF800C17D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36334CA61D3A7FF800C17D6F /* Build configuration list for PBXNativeTarget "FFPinterestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36334CA71D3A7FF800C17D6F /* Debug */,
+				36334CA81D3A7FF800C17D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36334C6B1D3A7FF800C17D6F /* Project object */;
+}
