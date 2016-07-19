@@ -18,12 +18,12 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axc-Rl-IIw">
-                        <rect key="frame" x="0.0" y="214" width="159" height="23"/>
+                        <rect key="frame" x="-1" y="210" width="161" height="26"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29986530172413794" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="23" id="5HO-VN-QRy"/>
+                            <constraint firstAttribute="height" constant="26" id="jZy-fN-3PZ"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -31,9 +31,9 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Axc-Rl-IIw" secondAttribute="bottom" constant="-2" id="2tT-El-jwL"/>
-                <constraint firstItem="Axc-Rl-IIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LZz-Kg-Xza"/>
-                <constraint firstAttribute="trailing" secondItem="Axc-Rl-IIw" secondAttribute="trailing" id="pJ2-L5-wDl"/>
+                <constraint firstItem="Axc-Rl-IIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-1" id="Z2b-Jk-ZkW"/>
+                <constraint firstAttribute="bottom" secondItem="Axc-Rl-IIw" secondAttribute="bottom" constant="-1" id="a64-XA-O9C"/>
+                <constraint firstAttribute="trailing" secondItem="Axc-Rl-IIw" secondAttribute="trailing" constant="-1" id="dWi-Ir-i3L"/>
             </constraints>
             <size key="customSize" width="159" height="235"/>
             <connections>

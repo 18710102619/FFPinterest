@@ -18,16 +18,16 @@ static NSString *const ID=@"shop";
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,FFPinterestLayoutDelegate>
 
 @property(nonatomic,strong)UICollectionView *collectionView;
-@property(nonatomic,strong)NSArray *shops;
+@property(nonatomic,strong)NSMutableArray *shops;
 
 @end
 
 @implementation ViewController
 
-- (NSArray *)shops
+- (NSMutableArray *)shops
 {
     if (_shops==nil) {
-        _shops=[FFShopModel objectArrayWithFilename:@"1.plist"];
+        _shops=[[NSMutableArray alloc]initWithArray:[FFShopModel objectArrayWithFilename:@"1.plist"]];
     }
     return _shops;
 }
@@ -36,14 +36,27 @@ static NSString *const ID=@"shop";
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor grayColor];
     
-    FFPinterestLayout *pinterestLayout=[[FFPinterestLayout alloc]init];
-    pinterestLayout.delegate=self;
+    FFPinterestLayout *layout=[[FFPinterestLayout alloc]init];
+    layout.delegate=self;
     
-    _collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 22, self.view.frame.size.width, self.view.frame.size.height-22) collectionViewLayout:pinterestLayout];
+    CGSize size=self.view.frame.size;
+    _collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 22, size.width, size.height-22) collectionViewLayout:layout];
     _collectionView.dataSource=self;
     _collectionView.delegate=self;
     [_collectionView registerNib:[UINib nibWithNibName:@"FFShopCell" bundle:nil] forCellWithReuseIdentifier:ID];
     [self.view addSubview:_collectionView];
+    
+    [self.collectionView addFooterWithTarget:self action:@selector(loadMoreShops)];
+}
+
+- (void)loadMoreShops
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSArray *shopArray = [FFShopModel objectArrayWithFilename:@"1.plist"];
+        [self.shops addObjectsFromArray:shopArray];
+        [self.collectionView reloadData];
+        [self.collectionView footerEndRefreshing];
+    });
 }
 
 #pragma mark - UICollectionViewDataSource

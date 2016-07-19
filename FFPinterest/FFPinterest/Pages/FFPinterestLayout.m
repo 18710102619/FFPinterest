@@ -12,7 +12,7 @@
 
 @property(nonatomic,strong)NSMutableDictionary *maxY;
 @property(nonatomic,strong)NSMutableArray *itemArray;
-
+@property(nonatomic,assign)CGFloat itemWidth;
 @end
 
 @implementation FFPinterestLayout
@@ -22,7 +22,7 @@
     if (_maxY==nil) {
         _maxY=[NSMutableDictionary dictionary];
         for (int i=0; i<_colCount; i++) {
-            [_maxY setObject:@"0" forKey:[NSString stringWithFormat:@"%d",i]];
+            [_maxY setObject:[NSString stringWithFormat:@"%f",self.sectionInset.top] forKey:[NSString stringWithFormat:@"%d",i]];
         }
     }
     return _maxY;
@@ -40,9 +40,9 @@
 {
     self = [super init];
     if (self) {
-        self.sectionInset=UIEdgeInsetsMake(10, 10, 10, 10);
-        self.rowMargin=10;
-        self.colMargin=10;
+        self.sectionInset=UIEdgeInsetsMake(0, 0, 0, 0);
+        self.rowMargin=3;
+        self.colMargin=3;
         self.colCount=3;
     }
     return self;
@@ -116,8 +116,11 @@
     
     // 计算位置
     CGFloat x=self.sectionInset.left+(width+self.colMargin)*[minCol intValue];
-    CGFloat y=[self.maxY[minCol] floatValue]+self.rowMargin;
-    
+    CGFloat y=0;
+    if (indexPath.item>2) {
+        y=[self.maxY[minCol] floatValue]+self.rowMargin;
+    }
+ 
     // 更新Y值
     self.maxY[minCol]=@(y+height);
     
