@@ -21,10 +21,10 @@
 - (void)setShopModel:(FFShopModel *)shopModel
 {
     _shopModel=shopModel;
+
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:shopModel.img] placeholderImage:[UIImage imageNamed:@"loading"]];
     
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:_shopModel.img] placeholderImage:[UIImage imageNamed:@"loading"]];
-    
-    self.priceLabel.text=_shopModel.price;
+    self.priceLabel.text = shopModel.price;
 }
 
 @end

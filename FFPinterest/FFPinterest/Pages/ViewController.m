@@ -7,39 +7,43 @@
 //
 
 #import "ViewController.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
 #import "FFPinterestLayout.h"
 #import "FFShopCell.h"
 #import "FFShopModel.h"
 
 static NSString *const ID=@"shop";
 
-@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,FFPinterestLayoutDelegate>
 
 @property(nonatomic,strong)UICollectionView *collectionView;
-@property(nonatomic,strong)NSMutableArray *shops;
+@property(nonatomic,strong)NSArray *shops;
 
 @end
 
 @implementation ViewController
 
-- (NSMutableArray *)shops
+- (NSArray *)shops
 {
     if (_shops==nil) {
-        self.shops=[NSMutableArray array];
-        [self.shops addObjectsFromArray:[NSArray arrayWithContentsOfFile:@"1.plist"]];
+        _shops=[FFShopModel objectArrayWithFilename:@"1.plist"];
     }
     return _shops;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor grayColor];
     
-    _collectionView=[[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:[[FFPinterestLayout alloc]init]];
+    FFPinterestLayout *pinterestLayout=[[FFPinterestLayout alloc]init];
+    pinterestLayout.delegate=self;
+    
+    _collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 22, self.view.frame.size.width, self.view.frame.size.height-22) collectionViewLayout:pinterestLayout];
     _collectionView.dataSource=self;
     _collectionView.delegate=self;
     [_collectionView registerNib:[UINib nibWithNibName:@"FFShopCell" bundle:nil] forCellWithReuseIdentifier:ID];
     [self.view addSubview:_collectionView];
-    
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -54,6 +58,15 @@ static NSString *const ID=@"shop";
     FFShopCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     cell.shopModel=self.shops[indexPath.row];
     return cell;
+}
+
+#pragma mark - FFPinterestLayoutDelegate
+
+- (CGFloat)pinterestLayout:(FFPinterestLayout *)pinterestLayout heightForWidth:(CGFloat)width atIndexPath:(NSIndexPath *)indexPath
+{
+    FFShopModel *shopModel=self.shops[indexPath.row];
+    CGFloat height=shopModel.h/shopModel.w*width;
+    return height;
 }
 
 @end

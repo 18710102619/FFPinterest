@@ -15,16 +15,26 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duT-Jr-VNH">
                         <rect key="frame" x="0.0" y="0.0" width="159" height="235"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axc-Rl-IIw">
-                        <rect key="frame" x="58" y="214" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axc-Rl-IIw">
+                        <rect key="frame" x="0.0" y="214" width="159" height="23"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29986530172413794" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="5HO-VN-QRy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Axc-Rl-IIw" secondAttribute="bottom" constant="-2" id="2tT-El-jwL"/>
+                <constraint firstItem="Axc-Rl-IIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LZz-Kg-Xza"/>
+                <constraint firstAttribute="trailing" secondItem="Axc-Rl-IIw" secondAttribute="trailing" id="pJ2-L5-wDl"/>
+            </constraints>
             <size key="customSize" width="159" height="235"/>
             <connections>
                 <outlet property="imageView" destination="duT-Jr-VNH" id="0GG-ld-oCK"/>
